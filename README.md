@@ -352,7 +352,3 @@ python run_pipeline.py
 - First-order Markov modeling assumes the next state depends only on the current state.
 
 ---
-
-## Portfolio description
-
-**Marketing Attribution & Budget Intelligence Platform** — Built a full-stack ML analytics system over 586K+ advertising interactions that reconstructs leakage-safe customer journeys, compares first-touch, last-touch, and Markov attribution, simulates constant-spend channel reallocation, trains fixed-horizon conversion-propensity models with held-out calibration diagnostics, validation-based model selection, and untouched testing, and serves generated results through FastAPI, SQLite, Streamlit, Docker, automated tests, and CI.
