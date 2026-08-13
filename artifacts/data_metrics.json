@@ -1,0 +1,26 @@
+{
+  "raw_rows": 586737,
+  "clean_rows": 582592,
+  "duplicate_rows_removed": 4145,
+  "unique_customers_raw": 240108,
+  "conversion_events": 17639,
+  "unique_converting_customers": 17639,
+  "channels": [
+    "Facebook",
+    "Paid Search",
+    "Instagram",
+    "Online Video",
+    "Online Display"
+  ],
+  "data_start": "2018-07-01T13:13:16+00:00",
+  "data_end": "2018-07-31T23:59:30+00:00",
+  "journeys_modeled": 232648,
+  "converted_journeys": 10179,
+  "converting_customers_total": 17639,
+  "conversions_without_strictly_prior_impression": 7460,
+  "journey_conversion_rate": 0.04375279392042915,
+  "avg_touchpoints_converted": 4.516062481579723,
+  "avg_touchpoints_nonconverted": 2.3319653524760753,
+  "same_timestamp_impressions_excluded": 194,
+  "post_conversion_impressions_excluded": 0
+}

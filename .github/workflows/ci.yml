@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python -m compileall -q .
+      - name: Rebuild all generated artifacts
+        run: python run_pipeline.py
+      - name: Run tests
+        run: pytest -q
+      - name: Build container image
+        run: docker build -t marketing-attribution:ci .
+      - name: Compose smoke test
+        shell: bash
+        run: |
+          set -euo pipefail
+          trap 'docker compose down -v' EXIT
+          docker compose up -d --build
+          for i in {1..30}; do
+            if curl --fail --silent http://localhost:8000/health | grep -q '"ready":true'; then
+              break
+            fi
+            sleep 2
+          done
+          curl --fail http://localhost:8000/health
+          curl --fail http://localhost:8000/attribution
+          curl --fail --header 'Content-Type: application/json' \
+            --data '{"path":["Instagram","Facebook"]}' \
+            http://localhost:8000/predict
+          for i in {1..30}; do
+            if curl --fail --silent http://localhost:8501/_stcore/health >/dev/null; then
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "Streamlit health endpoint did not become ready" >&2
+          exit 1
