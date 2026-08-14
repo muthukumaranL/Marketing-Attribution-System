@@ -4,7 +4,7 @@ A reproducible **full-stack ML analytics project** that reconstructs customer jo
 
 ## Business problem
 
-Customers often see several ads before converting. Last-touch attribution gives all credit to the final observed marketing touch and ignores the earlier sequence. This project compares **First Touch**, **Last Touch**, and a first-order **Markov removal-effect model** to show how channel credit changes when the full observed path is considered.
+Customers often see several ads before converting. Last-touch attribution gives all credit to the final observed marketing touch and ignores the earlier sequence. This project compares **First Touch**, **Last Touch** and a first-order **Markov removal-effect model** to show how channel credit changes when the full observed path is considered.
 
 The project then uses the Markov attribution shares in a **constant-total-spend reallocation simulation**. This is deliberately not presented as causal ROI optimization because the source data do not contain historical channel spend, response curves, randomized experiments, or incrementality measurements.
 
