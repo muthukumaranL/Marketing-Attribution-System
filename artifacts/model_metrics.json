@@ -1,0 +1,76 @@
+{
+  "prediction_target": "conversion within 7 days after an in-progress prefix of 1-5 ad impressions",
+  "prediction_horizon_days": 7,
+  "observation_end": "2018-07-31T23:59:30+00:00",
+  "snapshot_eligibility_cutoff": "2018-07-24T23:59:30+00:00",
+  "max_prefix_touchpoints": 5,
+  "snapshot_rows": 393810,
+  "right_censored_snapshots_excluded": 78025,
+  "converted_journeys_with_last_touch_within_horizon_pct": 86.1774241084586,
+  "eligible_customers": 199997,
+  "train_snapshots": 236220,
+  "validation_snapshots": 78642,
+  "test_snapshots": 78948,
+  "train_customers": 119997,
+  "validation_customers": 40000,
+  "test_customers": 40000,
+  "customer_overlap_across_partitions": 0,
+  "selection_metric": "validation_pr_auc",
+  "best_model": "logistic_regression",
+  "validation": {
+    "logistic_regression": {
+      "roc_auc": 0.6513484777535125,
+      "pr_auc": 0.06900330476489577,
+      "brier_score": 0.03558453434292191,
+      "log_loss": 0.1542142797336172,
+      "observed_positive_rate": 0.037460898756389714,
+      "mean_predicted_probability": 0.037605080002140606,
+      "calibration_gap": 0.00014418124575089203,
+      "ece_10_bin": 0.0013554241855555406
+    },
+    "xgboost": {
+      "roc_auc": 0.6511862807466691,
+      "pr_auc": 0.06865833417895781,
+      "brier_score": 0.035597801208496094,
+      "log_loss": 0.15430957497004683,
+      "observed_positive_rate": 0.037460898756389714,
+      "mean_predicted_probability": 0.03758958727121353,
+      "calibration_gap": 0.00012868851482381732,
+      "ece_10_bin": 0.0021140588061763126
+    }
+  },
+  "test": {
+    "logistic_regression": {
+      "roc_auc": 0.6474287065519417,
+      "pr_auc": 0.06427118451096961,
+      "brier_score": 0.03498302543452707,
+      "log_loss": 0.15238244497348025,
+      "observed_positive_rate": 0.036733039469017584,
+      "mean_predicted_probability": 0.037464885339977605,
+      "calibration_gap": 0.0007318458709600212,
+      "ece_10_bin": 0.0013082833345227844
+    },
+    "xgboost": {
+      "roc_auc": 0.6487014757467153,
+      "pr_auc": 0.06547700330965242,
+      "brier_score": 0.03497273474931717,
+      "log_loss": 0.15230226984161063,
+      "observed_positive_rate": 0.036733039469017584,
+      "mean_predicted_probability": 0.037403982132673264,
+      "calibration_gap": 0.0006709426636556798,
+      "ece_10_bin": 0.001480812382209885
+    }
+  },
+  "best_model_test_metrics": {
+    "roc_auc": 0.6474287065519417,
+    "pr_auc": 0.06427118451096961,
+    "brier_score": 0.03498302543452707,
+    "log_loss": 0.15238244497348025,
+    "observed_positive_rate": 0.036733039469017584,
+    "mean_predicted_probability": 0.037464885339977605,
+    "calibration_gap": 0.0007318458709600212,
+    "ece_10_bin": 0.0013082833345227844
+  },
+  "probability_calibration_note": "Models are trained without class reweighting; calibration is evaluated on held-out data with Brier score, log loss, calibration gap, and 10-bin ECE.",
+  "leakage_control": "strict pre-conversion journey cutoff + prefix-only features + complete fixed-horizon follow-up + disjoint customer train/validation/test partitions"
+}

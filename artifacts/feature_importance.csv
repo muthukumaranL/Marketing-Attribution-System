@@ -1,0 +1,47 @@
+feature,importance,signed_effect,model
+cat__touch_2_<NONE>,0.7560166815042638,-0.7560166815042638,logistic_regression
+cat__touch_3_<NONE>,0.6556746258225397,-0.6556746258225397,logistic_regression
+cat__touch_4_<NONE>,0.578608385963426,-0.578608385963426,logistic_regression
+cat__touch_5_<NONE>,0.5218886003640816,-0.5218886003640816,logistic_regression
+cat__last_channel_Online Display,0.3769197697374006,-0.3769197697374006,logistic_regression
+cat__last_channel_Paid Search,0.29538983951240866,-0.29538983951240866,logistic_regression
+cat__first_channel_Online Display,0.23499070925395646,-0.23499070925395646,logistic_regression
+cat__touch_1_Online Display,0.2349907092538802,-0.2349907092538802,logistic_regression
+cat__touch_2_Paid Search,0.23277330030816362,-0.23277330030816362,logistic_regression
+cat__first_channel_Paid Search,0.21884829624995017,-0.21884829624995017,logistic_regression
+cat__touch_1_Paid Search,0.21884829624995017,-0.21884829624995017,logistic_regression
+num__num_touchpoints,0.20884823196970848,-0.20884823196970848,logistic_regression
+cat__touch_1_Facebook,0.2003026512095001,-0.2003026512095001,logistic_regression
+cat__first_channel_Facebook,0.2003026512095001,-0.2003026512095001,logistic_regression
+cat__last_channel_Instagram,0.15900389856770486,-0.15900389856770486,logistic_regression
+cat__first_channel_Instagram,0.15150614911891103,-0.15150614911891103,logistic_regression
+cat__touch_1_Instagram,0.15150614911891103,-0.15150614911891103,logistic_regression
+cat__touch_5_Facebook,0.1425989435550203,-0.1425989435550203,logistic_regression
+cat__touch_3_Facebook,0.11652893139465312,-0.11652893139465312,logistic_regression
+num__count_Paid Search,0.10758224816037971,-0.10758224816037971,logistic_regression
+cat__touch_4_Instagram,0.10185191696195117,-0.10185191696195117,logistic_regression
+cat__touch_5_Instagram,0.10165491364593457,-0.10165491364593457,logistic_regression
+num__count_Online Display,0.10160923539351878,-0.10160923539351878,logistic_regression
+cat__touch_2_Instagram,0.09706842680414186,0.09706842680414186,logistic_regression
+cat__touch_4_Online Video,0.09665578014499789,-0.09665578014499789,logistic_regression
+cat__touch_3_Online Video,0.09287330221785808,-0.09287330221785808,logistic_regression
+cat__touch_1_Online Video,0.09111975946627972,-0.09111975946627972,logistic_regression
+cat__first_channel_Online Video,0.09111975946627972,-0.09111975946627972,logistic_regression
+cat__touch_5_Online Video,0.09047946111599342,-0.09047946111599342,logistic_regression
+cat__touch_3_Paid Search,0.08890600434011013,-0.08890600434011013,logistic_regression
+cat__last_channel_Facebook,0.07221269639382139,-0.07221269639382139,logistic_regression
+num__count_Online Video,0.06916272349544961,-0.06916272349544961,logistic_regression
+cat__touch_4_Paid Search,0.0686213880025076,-0.0686213880025076,logistic_regression
+cat__touch_3_Instagram,0.06069547428593659,0.06069547428593659,logistic_regression
+cat__touch_5_Online Display,0.05566679094100588,-0.05566679094100588,logistic_regression
+cat__touch_2_Online Display,0.04297822055017719,0.04297822055017719,logistic_regression
+num__num_unique_channels,0.04043230936866602,-0.04043230936866602,logistic_regression
+cat__touch_2_Online Video,0.03217088643879676,-0.03217088643879676,logistic_regression
+cat__touch_4_Online Display,0.029067408686102626,-0.029067408686102626,logistic_regression
+num__count_Facebook,0.027846809808303827,-0.027846809808303827,logistic_regression
+cat__touch_4_Facebook,0.0219626855397379,-0.0219626855397379,logistic_regression
+cat__touch_2_Facebook,0.015853344401572537,-0.015853344401572537,logistic_regression
+cat__touch_5_Paid Search,0.015521144323113498,0.015521144323113498,logistic_regression
+num__count_Instagram,0.008845913700878342,0.008845913700878342,logistic_regression
+cat__last_channel_Online Video,0.00675863891268946,0.00675863891268946,logistic_regression
+cat__touch_3_Online Display,0.003480175809298231,-0.003480175809298231,logistic_regression
